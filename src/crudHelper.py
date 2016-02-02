@@ -1,10 +1,10 @@
 import MySQLdb
 import configParserHelper 
 
-def insertFilenameLicenses(filename,licenses):
+def insertFilenameLicenses(args,filename,licenses):
 	# Open database connection
 	dbconfig=configParserHelper.getDatabaseInfo()
-	db = MySQLdb.connect("localhost",dbconfig[1],dbconfig[2],dbconfig[0])
+	db = MySQLdb.connect("localhost",args.username,args.password,args.database)
 
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
