@@ -7,3 +7,10 @@ sudo easy_install MySQL-python
 ```
 
 ## database schema
+```sql
+CREATE TABLE FILE_LICENSES
+(
+  FileName VARCHAR(255), 
+  Licenses VARCHAR(255)
+);
+```
