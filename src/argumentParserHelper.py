@@ -22,6 +22,9 @@ def arguments():
     parser.add_argument('-p', '--password',
                         help='your password',
                         default=dbInfo[2])
+    parser.add_argument('-c', '--create', action="store_true",
+			help='create database and run the script',
+			default=False)
     args = parser.parse_args()
     return args
 #     print(args.directory)

@@ -7,6 +7,7 @@ import configParserHelper
 import argumentParserHelper
 
 
+
 def stdOutOfNomos(directory):
 	nomoscmd=["/usr/share/fossology/nomos/agent/nomos" ,"-d",directory]
 	nomosProcess=subprocess.Popen(nomoscmd, stdout=subprocess.PIPE)
@@ -16,6 +17,9 @@ def stdOutOfNomos(directory):
 
 
 args=argumentParserHelper.arguments()
+if args.create:
+	crudHelper.createTable(args)	
+	
 print stdOutOfNomos(args.directory)
 for line in stdOutOfNomos(args.directory):
 	splitline=line.strip().split()
