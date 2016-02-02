@@ -1,9 +1,11 @@
+#!/usr/bin/python
+
 import subprocess
 import MySQLdb
 
 def insertFilenameLicenses(filename,licenses):
 	# Open database connection
-	db = MySQLdb.connect("localhost","root","jm98741236","fossologyDB")
+	db = MySQLdb.connect("localhost","root","tangina4","fossologyDB")
 
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
@@ -25,7 +27,7 @@ def insertFilenameLicenses(filename,licenses):
 	# disconnect from server
 	db.close()
 
-nomosProcess=subprocess.Popen(["/usr/share/fossology/nomos/agent/nomos" ,"-d","openssl-1.0.2e/"], stdout=subprocess.PIPE)
+nomosProcess=subprocess.Popen(["/usr/share/fossology/nomos/agent/nomos" ,"-d","openssl-1.0.2f/"], stdout=subprocess.PIPE)
 deleteFirst4LinesProcess=subprocess.Popen(["sed" ,"1,4d"], stdin=nomosProcess.stdout,stdout=subprocess.PIPE)
 
 end_of_pipe=deleteFirst4LinesProcess.stdout
