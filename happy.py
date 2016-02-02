@@ -3,11 +3,13 @@
 #It's working
 import subprocess
 import MySQLdb
+import configParserHelper 
 
 # function
 def insertFilenameLicenses(filename,licenses):
 	# Open database connection
-	db = MySQLdb.connect("localhost","root","tangina4","fossologyDB")
+	dbconfig=configParserHelper.getDatabaseInfo()
+	db = MySQLdb.connect("localhost",dbconfig[1],dbconfig[2],dbconfig[0])
 
 	# prepare a cursor object using cursor() method
 	cursor = db.cursor()
@@ -29,7 +31,8 @@ def insertFilenameLicenses(filename,licenses):
 	# disconnect from server
 	db.close()
 
-nomosProcess=subprocess.Popen(["/usr/share/fossology/nomos/agent/nomos" ,"-d","openssl-1.0.2f/"], stdout=subprocess.PIPE)
+packageConf=configParserHelper.packageInfo()
+nomosProcess=subprocess.Popen(["/usr/share/fossology/nomos/agent/nomos" ,"-d",packageConf], stdout=subprocess.PIPE)
 deleteFirst4LinesProcess=subprocess.Popen(["sed" ,"1,4d"], stdin=nomosProcess.stdout,stdout=subprocess.PIPE)
 
 end_of_pipe=deleteFirst4LinesProcess.stdout
