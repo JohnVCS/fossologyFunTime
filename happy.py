@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
+#It's working
 import subprocess
 import MySQLdb
 
+# function
 def insertFilenameLicenses(filename,licenses):
 	# Open database connection
 	db = MySQLdb.connect("localhost","root","tangina4","fossologyDB")
