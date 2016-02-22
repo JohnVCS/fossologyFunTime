@@ -14,12 +14,11 @@ CREATE TABLE FILE_LICENSES
   Licenses VARCHAR(255)
 );
 
-HEllo world
 ```
 
 ##License and Copyright
 
-Copyright © 2016 University of Nebraska at Omaha
+Copyright © 2016
 
 fossologyFunTime is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. See the file LICENSE for more details.
 
