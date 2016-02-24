@@ -16,16 +16,17 @@ Your Team
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
 
 * Your Community 
-** irc
-** freenode
-***#spdx
-**irc.oftc.net
-*#fossology
-DoSOCSv2
-SPDX
-fossology
-http://www.fossology.org/projects/fossology/wiki/Contact_Us
-Linux Foundation
+  * irc
+    * freenode
+    * #spdx
+* irc.oftc.net
+  * #fossology
+
+* DoSOCSv2
+* SPDX
+* fossology
+* http://www.fossology.org/projects/fossology/wiki/Contact_Us
+* Linux Foundation
 
 
 
