@@ -29,21 +29,9 @@ Jesse and John communicate through phone/email and in person. We are both taking
 
 
 
-## install dependencies
-```bash
-sudo apt-get install libmysqlclient-dev python-dev python-setuptools
-sudo easy_install MySQL-python
-```
-
-## database schema
-```sql
-CREATE TABLE FILE_LICENSES
-(
-  FileName VARCHAR(255), 
-  Licenses VARCHAR(255)
-);
-
-```
+## Dependencies
+DoSOCSv2
+https://github.com/DoSOCSv2/DoSOCSv2
 
 ##google doc
 https://docs.google.com/document/d/1xuFlnHZnXJlvCpfcOzlIjIB5OAP9E_8FbCU4mbE0tp4/edit
