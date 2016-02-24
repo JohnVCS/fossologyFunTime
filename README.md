@@ -16,7 +16,8 @@ Language(s)
 * Python 2.7.x
 
 ## DoSOCSv2 Schema
-https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png
+!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png)
+!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image01.png)
 
 
 ## Communication Management Plan
