@@ -11,7 +11,7 @@ OS
 IDE
 * Eclipse/Pydev
 
-## Communication Management plan
+## Communication Management Plan
 Your Team
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
 
