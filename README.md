@@ -10,13 +10,15 @@ OS
  * (Jesse)  -  Ubuntu Gnome 15.10 ;
 IDE
 * Eclipse/Pydev
+Language(s)
+*Python 2.7.x
 
 ## DoSOCSv2 Schema
 https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png
 
 
 ## Communication Management Plan
-Your Team
+Your Team -
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
 
 * Your Community 
@@ -36,9 +38,6 @@ Jesse and John communicate through phone/email and in person. We are both taking
 ## Dependencies
 DoSOCSv2
 https://github.com/DoSOCSv2/DoSOCSv2
-
-##google doc
-https://docs.google.com/document/d/1xuFlnHZnXJlvCpfcOzlIjIB5OAP9E_8FbCU4mbE0tp4/edit
 
 ##Usage
 ```python
