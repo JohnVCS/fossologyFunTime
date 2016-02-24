@@ -11,6 +11,10 @@ OS
 IDE
 * Eclipse/Pydev
 
+## DoSOCSv2 Schema
+https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png
+
+
 ## Communication Management Plan
 Your Team
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
