@@ -21,7 +21,6 @@ Jesse and John communicate through phone/email and in person. We are both taking
     * #spdx
 * irc.oftc.net
   * #fossology
-
 * DoSOCSv2
 * SPDX
 * fossology
