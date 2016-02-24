@@ -4,49 +4,42 @@
   Maven allows the ability to get the transitive dependency hierarchy metadata from a POM.xml file.  It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
 
 ## Development Environment
-
 OS 
- * (John)   -  Ubuntu 14.04 ; 
- * (Jesse)  -  Ubuntu Gnome 15.10 ;
+ * (John)   -  Ubuntu 14.04 
+ * (Jesse)  -  Ubuntu Gnome 15.10
+ 
 IDE
 * Eclipse/Pydev
 
-## Communication Management plan
-Your Team
+Language(s)
+* Python 2.7.x
+
+## Communication Management Plan
+Your Team -
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
 
 * Your Community 
   * irc
     * freenode
-    * #spdx
-* irc.oftc.net
-  * #fossology
+      * #spdx
+  * irc.oftc.net
+    * #fossology
 * DoSOCSv2
 * SPDX
 * fossology
 * http://www.fossology.org/projects/fossology/wiki/Contact_Us
 * Linux Foundation
 
+## Data Flow Diagram of the System
+!["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image00.png)
 
+## DoSOCSv2 Schema
+!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png)
+!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image01.png)
 
-## install dependencies
-```bash
-sudo apt-get install libmysqlclient-dev python-dev python-setuptools
-sudo easy_install MySQL-python
-```
-
-## database schema
-```sql
-CREATE TABLE FILE_LICENSES
-(
-  FileName VARCHAR(255), 
-  Licenses VARCHAR(255)
-);
-
-```
-
-##google doc
-https://docs.google.com/document/d/1xuFlnHZnXJlvCpfcOzlIjIB5OAP9E_8FbCU4mbE0tp4/edit
+## Dependencies
+DoSOCSv2
+https://github.com/DoSOCSv2/DoSOCSv2
 
 ##Usage
 ```python
