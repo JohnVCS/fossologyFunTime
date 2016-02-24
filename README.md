@@ -31,11 +31,11 @@ Jesse and John communicate through phone/email and in person. We are both taking
 * Linux Foundation
 
 ## Data Flow Diagram of the System
-!["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image00.png)
+!["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/dataFlowDiagram.png)
 
 ## DoSOCSv2 Schema
-!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png)
-!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image01.png)
+!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/SchemaDiagramDoSocs.png)
+!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/schemaPartial.png)
 
 ## Dependencies
 DoSOCSv2
