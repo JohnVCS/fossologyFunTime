@@ -16,6 +16,9 @@ CREATE TABLE FILE_LICENSES
 
 ```
 
+##google doc
+https://docs.google.com/document/d/1xuFlnHZnXJlvCpfcOzlIjIB5OAP9E_8FbCU4mbE0tp4/edit
+
 ##License and Copyright
 
 Copyright © 2016 Jesse Moseman, and John Carlo B. Viernes IV
