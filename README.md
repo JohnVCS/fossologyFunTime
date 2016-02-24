@@ -37,6 +37,7 @@ Jesse and John communicate through phone/email and in person. We are both taking
 * Linux Foundation
 
 ## Data Flow Diagram of the System
+!["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image00.png)
 
 ## Dependencies
 DoSOCSv2
