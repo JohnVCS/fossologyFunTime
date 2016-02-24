@@ -4,7 +4,6 @@
   Maven allows the ability to get the transitive dependency hierarchy metadata from a POM.xml file.  It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
 
 ## Development Environment
-
 OS 
  * (John)   -  Ubuntu 14.04 
  * (Jesse)  -  Ubuntu Gnome 15.10
@@ -14,11 +13,6 @@ IDE
 
 Language(s)
 * Python 2.7.x
-
-## DoSOCSv2 Schema
-!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png)
-!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image01.png)
-
 
 ## Communication Management Plan
 Your Team -
@@ -38,6 +32,10 @@ Jesse and John communicate through phone/email and in person. We are both taking
 
 ## Data Flow Diagram of the System
 !["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image00.png)
+
+## DoSOCSv2 Schema
+!["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png)
+!["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/image01.png)
 
 ## Dependencies
 DoSOCSv2
