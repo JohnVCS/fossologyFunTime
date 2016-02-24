@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# Copyright (C) 2015 Jesse Moseman, and John Carlo B. Viernes IV
+# Copyright (C) 2016 Jesse Moseman, and John Carlo B. Viernes IV
 #
 # This file is part of fossologyFunTime.
 #
