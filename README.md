@@ -11,7 +11,7 @@ OS
 IDE
 * Eclipse/Pydev
 Language(s)
-*Python 2.7.x
+* Python 2.7.x
 
 ## DoSOCSv2 Schema
 https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/images/SchemaDiagramDoSocs.png
@@ -24,9 +24,9 @@ Jesse and John communicate through phone/email and in person. We are both taking
 * Your Community 
   * irc
     * freenode
-    * #spdx
-* irc.oftc.net
-  * #fossology
+      * #spdx
+  * irc.oftc.net
+    * #fossology
 * DoSOCSv2
 * SPDX
 * fossology
