@@ -6,10 +6,12 @@
 ## Development Environment
 
 OS 
- * (John)   -  Ubuntu 14.04 ; 
- * (Jesse)  -  Ubuntu Gnome 15.10 ;
+ * (John)   -  Ubuntu 14.04 
+ * (Jesse)  -  Ubuntu Gnome 15.10
+ 
 IDE
 * Eclipse/Pydev
+
 Language(s)
 * Python 2.7.x
 
