@@ -18,7 +18,7 @@ CREATE TABLE FILE_LICENSES
 
 ##License and Copyright
 
-Copyright © 2016
+Copyright © 2016 Jesse Moseman, and John Carlo B. Viernes IV
 
 fossologyFunTime is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 2 of the License, or (at your option) any later version. See the file LICENSE for more details.
 
