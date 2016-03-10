@@ -6,4 +6,5 @@ edgeLabels=[]
 for e1,e2 in graph.edges():
 	edgeLabels.append((nodesDict[e1]['label'],nodesDict[e2]['label']))
 
-print edgeLabels
+for e in edgeLabels:
+	print e
