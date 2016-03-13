@@ -5,7 +5,7 @@ import os
 devnull=open('/dev/null','w')
 
 # creates the temporary directory to store the jar files
-def createTempDirectory():
+def createTempDirectoryIfDoesntExist():
 	newpath = r'mydep' 
 	if not os.path.exists(newpath):
     		os.makedirs(newpath)
@@ -13,7 +13,7 @@ def createTempDirectory():
 # copies depedencies to folder 
 def copyDependencyToTempFolder():
 	copyDepCmd=["mvn","dependency:copy-dependencies","-DoutputDirectory=mydep","-Dclassifier=sources"]
-	copyDepMvnPluginProcess=subprocess.Popen(copyDepCmd)
+	copyDepMvnPluginProcess=subprocess.Popen(copyDepCmd, stdout=devnull)
 
 # creates the graphML
 # graphML is one of the supported output type format of Maven
@@ -39,6 +39,9 @@ def parseGraphMl():
 #return end_of_pipe 
 
 if __name__ == '__main__':
+	#createTempDirectoryIfDoesntExist()
+	#copyDependencyToTempFolder()
+
 	createGraphMl()
 
 	while not os.path.exists("test.graphml"):
