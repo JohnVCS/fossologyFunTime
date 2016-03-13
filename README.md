@@ -14,6 +14,9 @@ IDE
 Language(s)
 * Python 2.7.x
 
+Dependency
+* Maven 3.3.3 - https://gist.github.com/ervinb/34203f0cc54c1e7f982b (Link on how to install for ubuntu 14.04 - You also need to create a directory called .semaphore-cache)
+
 ## Communication Management Plan
 Your Team -
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
