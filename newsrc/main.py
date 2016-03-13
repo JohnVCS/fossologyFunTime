@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import subprocess
 import os
 
@@ -20,24 +22,29 @@ def copyDependencyToTempFolder():
 def createGraphMl():
 	createGraphMlCommand = ["mvn", "dependency:tree","-DoutputFile=test.graphml", "-DoutputType=graphml"]
 	createGraphMlMvnPluginProcess = subprocess.Popen(createGraphMlCommand, stdout=devnull)
+
+# parses graphml file and returns dependency tuples
+# basically it shows the parent-child relationship in a sort of like a pair
 def parseGraphMl():
 	import networkx
 	import os.path
 	import time
-
+	
+	# graph is an oject imported by networkx
 	graph=networkx.read_graphml("test.graphml")
+	
+	# optional argument data="NodeLabel" since that is what we need
+	# nodes grabs all the nodes and nodelabel, and then returns a set of tuples
+	# dict changes the comma to colon so we can grab the id's and labels
+	# essentially, the purpose is to map the node-id to package name 
 	nodesDict=dict(graph.nodes(data="NodeLabel"))
+	# print(dict(graph.nodes(data="NodeLabel")))
 	edgeLabels=[]
 	for e1,e2 in graph.edges():
 		edgeLabels.append((nodesDict[e1]['label'],nodesDict[e2]['label']))
 	return edgeLabels
 
-
-
-#deleteFirst4LinesProcess=subprocess.Popen(["sed" ,"1,4d"], stdin=nomosProcess.stdout,stdout=subprocess.PIPE)
-#end_of_pipe=deleteFirst4LinesProcess.stdout
-#return end_of_pipe 
-
+# main method
 if __name__ == '__main__':
 	#createTempDirectoryIfDoesntExist()
 	#copyDependencyToTempFolder()
