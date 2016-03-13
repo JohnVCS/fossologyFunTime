@@ -20,6 +20,19 @@ def copyDependencyToTempFolder():
 def createGraphMl():
 	createGraphMlCommand = ["mvn", "dependency:tree","-DoutputFile=test.graphml", "-DoutputType=graphml"]
 	createGraphMlMvnPluginProcess = subprocess.Popen(createGraphMlCommand, stdout=devnull)
+def parseGraphMl():
+	import networkx
+	import os.path
+	import time
+
+	graph=networkx.read_graphml("test.graphml")
+	nodesDict=dict(graph.nodes(data="NodeLabel"))
+	edgeLabels=[]
+	for e1,e2 in graph.edges():
+		edgeLabels.append((nodesDict[e1]['label'],nodesDict[e2]['label']))
+	return edgeLabels
+
+
 
 #deleteFirst4LinesProcess=subprocess.Popen(["sed" ,"1,4d"], stdin=nomosProcess.stdout,stdout=subprocess.PIPE)
 #end_of_pipe=deleteFirst4LinesProcess.stdout
@@ -28,3 +41,9 @@ def createGraphMl():
 if __name__ == '__main__':
 	createGraphMl()
 
+	while not os.path.exists("test.graphml"):
+	    time.sleep(1)
+
+	edgeLabels=parseGraphMl()
+	for e in edgeLabels:
+		print e
