@@ -33,7 +33,7 @@ Jesse and John communicate through phone/email and in person. We are both taking
 * fossology
 * http://www.fossology.org/projects/fossology/wiki/Contact_Us
 * Linux Foundation
-* 
+
 ## Data Flow Diagram of the System
 !["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/dataFlowDiagram.png)
 
