@@ -25,8 +25,6 @@ Jesse and John communicate through phone/email and in person. We are both taking
   * irc
     * freenode
       * #spdx
-  * irc.oftc.net
-    * #fossology
 * DoSOCSv2
   * Thomas T Gurney <ttg@tuta.io>  
 * SPDX
