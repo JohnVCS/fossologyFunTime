@@ -19,7 +19,7 @@ Dependency
 
 ## Communication Management Plan
 Your Team -
-Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend.
+Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend. In addition, we are also using Github's issue tracker as another means of communication.
 
 * Your Community 
   * irc
