@@ -37,10 +37,10 @@ Jesse and John communicate through phone/email and in person. We are both taking
 !["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/schemaPartial.png)
 
 ## Dependencies
-DoSOCSv2
-
+DoSOCSv2 - https://github.com/DoSOCSv2/DoSOCSv2
 networkx
-https://github.com/DoSOCSv2/DoSOCSv2
+
+
 
 ##Usage
 ```python
