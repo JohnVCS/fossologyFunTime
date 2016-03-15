@@ -38,6 +38,7 @@ Jesse and John communicate through phone/email and in person. We are both taking
 
 ## Dependencies
 DoSOCSv2
+
 networkx
 https://github.com/DoSOCSv2/DoSOCSv2
 
