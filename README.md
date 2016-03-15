@@ -1,7 +1,10 @@
 # fossologyFunTime
 
 ## System Description
-  Maven allows the ability to get the transitive dependency hierarchy metadata from a POM.xml file.  It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
+
+  fossologyFunTime is a tool that provides open source package license information of a software project using the SPDX specification.
+
+  fossologyFunTime works by accepting a POM.xml file from a user. The POM.xml is passed to a python script that uses Maven. Maven allows the ability to get the transitive dependency hierarchy metadata from the passed POM.xml file. It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
 
 ## Development Environment
 OS 
