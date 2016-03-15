@@ -2,9 +2,11 @@
 
 ## System Description
 
-  fossologyFunTime is a tool that provides open source package license information of a software project using the SPDX specification.
+  fossologyFunTime is a tool that provides features that will be merged into DoSOCSv2 to persist depedency information in the DoSOCSv2 database.
 
-  fossologyFunTime works by accepting a POM.xml file from a user. The POM.xml is passed to a python script that uses Maven. Maven allows the ability to get the transitive dependency hierarchy metadata from the passed POM.xml file. It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
+  fossologyFunTime works by accepting a POM.xml file and the project artifact from a user. The POM.xml is passed to a python script that uses Maven. Maven allows the ability to get the transitive dependency hierarchy metadata from the passed POM.xml file. It also has the ability to grab transitive dependencies from maven central.  These two features will be invoked using our python script.  The transitive dependencies will be placed into a temporary directory to be scanned by DoSOCSv2, and the transitive dependency hierarchy metadata will passed to a DoSOCSv2 Maven Dependency plugin which will facilitate DoSOCSv2’s ability to persist the HAS_PREREQUISITE and PREREQUISITE_FOR relationships defined in the relationship_types SPDX schema.
+  
+Eventually fossologyFunTime will be merged with the DOSOCSv2 project.  It'll work in series of steps.  First the project will be scaned by DoSOCS and a document will be generated.  From here DoSOCSv2 will request the depedency source archieves into a temporary directory.  The depedency source archives will be scanned and documents will be created for them.  After all the documents are created the depedency hierarchy metadata will be persisted in it's affiliated document via package identifiers.  These depedency relationships will be seen at the project artifact document via external document references.
 
 ## Development Environment
 OS 
