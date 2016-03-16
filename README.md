@@ -26,6 +26,7 @@ Dependency
 * Maven 3.3.3 - https://gist.github.com/ervinb/34203f0cc54c1e7f982b (Link on how to install for ubuntu 14.04 - You also need to create a directory called .semaphore-cache)
 
 ## use case
+```
         title
                 developer submitting something....
         primary actor
@@ -48,6 +49,7 @@ Dependency
                 pom.xml
         Notes:
                 don't worry about it
+```
 
 ## Communication Management Plan
 Your Team -
