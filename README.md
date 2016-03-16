@@ -41,6 +41,8 @@ Jesse and John communicate through phone/email and in person. We are both taking
 !["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/SchemaDiagramDoSocs.png)
 !["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/schemaPartial.png)
 
+## Use Case
+
 ## Dependencies
 DoSOCSv2 - https://github.com/DoSOCSv2/DoSOCSv2
 
