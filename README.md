@@ -28,27 +28,30 @@ Dependency
 ## use case
 ```
         title
-                developer submitting something....
+                Developer submits pom.xml and artifact to generate spdx document that shows depdency relationships for legal and security purposes.
         primary actor
                 external entity - developer
         goal in context
-                lines up with title
-                "to record depedency tree structure" and identify packages
+                Developer wants to generate spdx document with depedency information for legal and security purposes.
         stakeholders and interests
-                decision maker/manager who want's to see spdx information
+                decision maker/manager - want to see spdx information for legal and security purposes
+                lawyer/legal professionals -  want to see spdx information for legal and security purposes
+                spdx community - want to see spdx information for legal and security purposes
+                IT auditing companies -  want to see spdx information for legal and security purposes
         preconditions
-          valid pom file and prebuilt artifact
-          proper connections with dosocs db and maven central
+          Valid pom file and prebuilt artifact
+          Proper connections with dosocs db and maven central
         success scenario
-                tree information in the database
+                Depedency relationship information is persisted in the dosocs database.
+                Valid spdx document is printable.
         failed end condition
                 can't connect to maven central
                 can't connect to dosocs
                 non-valid pom
+                non-valid artifact
+                  artifact/depedencies don't contain sources - this is needed for the license scanner
         trigger
-                pom.xml
-        Notes:
-                don't worry about it
+                pom.xml/project artifact
 ```
 
 ## Communication Management Plan
