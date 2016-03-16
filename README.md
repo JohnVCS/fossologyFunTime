@@ -68,6 +68,7 @@ Jesse and John communicate through phone/email and in person. We are both taking
 * SPDX
 
 ## Data Flow Diagram of the System
+The list is for the external references.
 !["Data Flow Diagram"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/Diagram2.png)
 
 ## DoSOCSv2 Schema
