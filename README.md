@@ -8,6 +8,9 @@
   
 Eventually fossologyFunTime will be merged with the DOSOCSv2 project.  It'll work in series of steps.  First the project will be scaned by DoSOCS and a document will be generated.  From here DoSOCSv2 will request the depedency source archieves into a temporary directory.  The depedency source archives will be scanned and documents will be created for them.  After all the documents are created the depedency hierarchy metadata will be persisted in it's affiliated document via package identifiers.  These depedency relationships will be seen at the project artifact document via external document references.
 
+### Atribution for implementation ideas
+Thomas T Gurney helped in the decision to use external document references to get depedency relationships across different namespaces. 
+
 ## Development Environment
 OS 
  * (John)   -  Ubuntu 14.04 
@@ -33,10 +36,8 @@ Dependency
         stakeholders and interests
                 decision maker/manager who want's to see spdx information
         preconditions
-                "what needs to be avaialble"
-                can be technical
-                        valid pom file
-                        proper connections with maven/maven central
+          valid pom file and prebuilt artifact
+          proper connections with dosocs db and maven central
         success scenario
                 tree information in the database
         failed end condition
