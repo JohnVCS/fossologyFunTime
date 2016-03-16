@@ -22,6 +22,32 @@ Language(s)
 Dependency
 * Maven 3.3.3 - https://gist.github.com/ervinb/34203f0cc54c1e7f982b (Link on how to install for ubuntu 14.04 - You also need to create a directory called .semaphore-cache)
 
+## use case
+        title
+                developer submitting something....
+        primary actor
+                external entity - developer
+        goal in context
+                lines up with title
+                "to record depedency tree structure" and identify packages
+        stakeholders and interests
+                decision maker/manager who want's to see spdx information
+        preconditions
+                "what needs to be avaialble"
+                can be technical
+                        valid pom file
+                        proper connections with maven/maven central
+        success scenario
+                tree information in the database
+        failed end condition
+                can't connect to maven central
+                can't connect to dosocs
+                non-valid pom
+        trigger
+                pom.xml
+        Notes:
+                don't worry about it
+
 ## Communication Management Plan
 Your Team -
 Jesse and John communicate through phone/email and in person. We are both taking the same classes currently, and we schedule a face-to-face meeting at PKI every weekend. In addition, we are also using Github's issue tracker as another means of communication.
