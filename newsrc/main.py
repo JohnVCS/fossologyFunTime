@@ -21,7 +21,8 @@ def copyDependencyToTempFolder():
 # graphML is one of the supported output type format of Maven
 def createGraphMl():
 	createGraphMlCommand = ["mvn", "dependency:tree","-DoutputFile=test.graphml", "-DoutputType=graphml"]
-	createGraphMlMvnPluginProcess = subprocess.Popen(createGraphMlCommand, stdout=devnull)
+	#.call(...) is for blocking
+	createGraphMlMvnPluginProcess = subprocess.call(createGraphMlCommand, stdout=devnull)
 
 # parses graphml file and returns dependency tuples
 # basically it shows the parent-child relationship in a sort of like a pair
@@ -46,13 +47,11 @@ def parseGraphMl():
 
 # main method
 if __name__ == '__main__':
-	#createTempDirectoryIfDoesntExist()
-	#copyDependencyToTempFolder()
-
+	createTempDirectoryIfDoesntExist()
+	copyDependencyToTempFolder()
+	#createDocumentsForDepedencies()
 	createGraphMl()
 
-	while not os.path.exists("test.graphml"):
-	    time.sleep(1)
 
 	edgeLabels=parseGraphMl()
 	for e in edgeLabels:
