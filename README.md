@@ -26,7 +26,7 @@ Language(s)
 Dependency
 * Maven 3.3.3 - https://gist.github.com/ervinb/34203f0cc54c1e7f982b (Link on how to install for ubuntu 14.04 - You also need to create a directory called .semaphore-cache)
 
-## use case
+## Use Case
 ```
         title
                 Developer submits pom.xml and artifact to generate spdx document that shows depdency relationships for legal and security purposes.
@@ -75,7 +75,6 @@ The list is for the external references.
 !["DoSOCSv2 Schema"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/SchemaDiagramDoSocs.png)
 !["DoSOCSv2 Schema Partial"](https://raw.githubusercontent.com/JohnVCS/fossologyFunTime/master/SchemaAndDataFlowImages/schemaPartial.png)
 
-## Use Case
 
 ## Dependencies
 DoSOCSv2 - https://github.com/DoSOCSv2/DoSOCSv2
