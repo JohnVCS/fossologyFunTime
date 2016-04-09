@@ -34,7 +34,7 @@ def createTempDirectoryIfDoesntExist():
 # copies depedencies to folder 
 def copyDependencyToTempFolder():
 	copyDepCmd=["mvn","dependency:copy-dependencies","-DoutputDirectory=mydep","-Dclassifier=sources"]
-	copyDepMvnPluginProcess=subprocess.Popen(copyDepCmd, stdout=devnull)
+	copyDepMvnPluginProcess=subprocess.call(copyDepCmd, stdout=devnull)
 
 # creates the graphML
 # graphML is one of the supported output type format of Maven
@@ -64,14 +64,25 @@ def parseGraphMl():
 		edgeLabels.append((nodesDict[e1]['label'],nodesDict[e2]['label']))
 	return edgeLabels
 
-# main method
-if __name__ == '__main__':
+def createDocumentsForDepedencies():
+	for filename in os.listdir('mydep'):
+		dosocsOneshotCommand = ["dosocs2", "oneshot","mydep/"+filename]
+		#.call(...) is for blocking
+		dosocsOneshotProcess = subprocess.call(dosocsOneshotCommand)#, stdout=devnull)
+
+
+def getDepAndGenDocsForDeps():
 	createTempDirectoryIfDoesntExist()
 	copyDependencyToTempFolder()
-	#createDocumentsForDepedencies()
-	createGraphMl()
+	createDocumentsForDepedencies()
 
 
-	edgeLabels=parseGraphMl()
-	for e in edgeLabels:
-		print e
+# main method
+if __name__ == '__main__':
+	#get dependencies and generate documents
+	getDepAndGenDocsForDeps()
+
+	#createGraphMl()
+	#edgeLabels=parseGraphMl()
+	#for e in edgeLabels:
+	#	print e
